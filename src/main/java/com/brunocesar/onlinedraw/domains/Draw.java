@@ -30,6 +30,9 @@ public class Draw {
     }
 
     public int execute() {
+        Objects.requireNonNull(min, "min is required");
+        Objects.requireNonNull(max, "max is required");
+
         return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
 
@@ -41,13 +44,21 @@ public class Draw {
         this.max = max;
     }
 
+    public int getMin() {
+        return min;
+    }
+
+    public void setMin(int min) {
+        this.min = min;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Draw that = (Draw) o;
-        return max == that.max &&
-                min == that.min;
+        Draw draw = (Draw) o;
+        return max == draw.max &&
+                min == draw.min;
     }
 
     @Override
@@ -55,11 +66,9 @@ public class Draw {
         return Objects.hash(max, min);
     }
 
-
     @Override
-    public String
-    toString() {
-        return "OnlineDraw{" +
+    public String toString() {
+        return "Draw{" +
                 "max=" + max +
                 ", min=" + min +
                 '}';

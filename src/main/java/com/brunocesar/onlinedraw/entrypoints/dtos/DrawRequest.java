@@ -20,6 +20,9 @@ public class DrawRequest implements Serializable {
     @JsonProperty(value = "max")
     private BigDecimal max;
 
+    @JsonProperty(value = "draws")
+    private Integer draws;
+
     public DrawRequest() {
     }
 
@@ -39,18 +42,27 @@ public class DrawRequest implements Serializable {
         this.max = max;
     }
 
+    public Integer getDraws() {
+        return draws;
+    }
+
+    public void setDraws(Integer draws) {
+        this.draws = draws;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         DrawRequest that = (DrawRequest) o;
         return Objects.equals(min, that.min) &&
-                Objects.equals(max, that.max);
+                Objects.equals(max, that.max) &&
+                Objects.equals(draws, that.draws);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(min, max);
+        return Objects.hash(min, max, draws);
     }
 
     @Override
@@ -58,6 +70,7 @@ public class DrawRequest implements Serializable {
         return "DrawRequest{" +
                 "min=" + min +
                 ", max=" + max +
+                ", draws=" + draws +
                 '}';
     }
 }

@@ -3,6 +3,7 @@ package com.brunocesar.onlinedraw.entrypoints.dtos;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -13,20 +14,20 @@ import java.util.Objects;
  **/
 public class DrawResponse implements Serializable {
 
-    @JsonProperty(value = "result")
-    private final Integer result;
+    @JsonProperty(value = "results")
+    private final List<Integer> results;
 
-    private DrawResponse(Integer result) {
-        this.result = result;
+    private DrawResponse(List<Integer> results) {
+        this.results = results;
     }
 
-    public static DrawResponse of(Integer result) {
-        Objects.requireNonNull(result, "result is required");
-        return new DrawResponse(result);
+    public static DrawResponse of(List<Integer> results) {
+        Objects.requireNonNull(results, "results is required");
+        return new DrawResponse(results);
     }
 
-    public Integer getResult() {
-        return result;
+    public List<Integer> getResults() {
+        return results;
     }
 
     @Override
@@ -34,18 +35,18 @@ public class DrawResponse implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         DrawResponse that = (DrawResponse) o;
-        return Objects.equals(result, that.result);
+        return Objects.equals(results, that.results);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(result);
+        return Objects.hash(results);
     }
 
     @Override
     public String toString() {
         return "DrawResponse{" +
-                "result=" + result +
+                "results=" + results +
                 '}';
     }
 
