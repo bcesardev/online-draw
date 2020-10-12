@@ -1,7 +1,7 @@
-package com.brunocesar.onlinedraw.business.validators;
+package dev.brunocesar.onlinedraw.business.validators;
 
-import com.brunocesar.onlinedraw.business.exceptions.DrawException;
-import com.brunocesar.onlinedraw.entrypoints.dtos.DrawRequest;
+import dev.brunocesar.onlinedraw.business.exceptions.DrawException;
+import dev.brunocesar.onlinedraw.entrypoints.dtos.DrawRequest;
 
 import java.math.BigDecimal;
 

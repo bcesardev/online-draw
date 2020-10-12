@@ -1,10 +1,10 @@
-package com.brunocesar.onlinedraw.business.usecases;
+package dev.brunocesar.onlinedraw.business.usecases;
 
-import com.brunocesar.onlinedraw.business.exceptions.DrawException;
-import com.brunocesar.onlinedraw.business.validators.DrawRequestValidator;
-import com.brunocesar.onlinedraw.domains.Draw;
-import com.brunocesar.onlinedraw.entrypoints.dtos.DrawRequest;
-import com.brunocesar.onlinedraw.entrypoints.dtos.DrawResponse;
+import dev.brunocesar.onlinedraw.business.exceptions.DrawException;
+import dev.brunocesar.onlinedraw.business.validators.DrawRequestValidator;
+import dev.brunocesar.onlinedraw.domains.Draw;
+import dev.brunocesar.onlinedraw.entrypoints.dtos.DrawRequest;
+import dev.brunocesar.onlinedraw.entrypoints.dtos.DrawResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

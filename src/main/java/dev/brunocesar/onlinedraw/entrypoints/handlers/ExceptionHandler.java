@@ -1,7 +1,7 @@
-package com.brunocesar.onlinedraw.entrypoints.handlers;
+package dev.brunocesar.onlinedraw.entrypoints.handlers;
 
-import com.brunocesar.onlinedraw.entrypoints.dtos.CustomErrorResponse;
-import com.brunocesar.onlinedraw.business.exceptions.DrawException;
+import dev.brunocesar.onlinedraw.entrypoints.dtos.CustomErrorResponse;
+import dev.brunocesar.onlinedraw.business.exceptions.DrawException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.server.reactive.ServerHttpRequest;

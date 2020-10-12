@@ -1,4 +1,4 @@
-package com.brunocesar.onlinedraw.entrypoints.dtos;
+package dev.brunocesar.onlinedraw.entrypoints.dtos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

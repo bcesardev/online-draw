@@ -1,4 +1,4 @@
-package com.brunocesar.onlinedraw.business.exceptions;
+package dev.brunocesar.onlinedraw.business.exceptions;
 
 /**
  * DrawException

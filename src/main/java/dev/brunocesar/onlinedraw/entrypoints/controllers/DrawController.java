@@ -1,9 +1,9 @@
-package com.brunocesar.onlinedraw.entrypoints.controllers;
+package dev.brunocesar.onlinedraw.entrypoints.controllers;
 
-import com.brunocesar.onlinedraw.entrypoints.dtos.DrawRequest;
-import com.brunocesar.onlinedraw.entrypoints.dtos.DrawResponse;
-import com.brunocesar.onlinedraw.business.exceptions.DrawException;
-import com.brunocesar.onlinedraw.business.usecases.DrawUseCase;
+import dev.brunocesar.onlinedraw.entrypoints.dtos.DrawRequest;
+import dev.brunocesar.onlinedraw.entrypoints.dtos.DrawResponse;
+import dev.brunocesar.onlinedraw.business.exceptions.DrawException;
+import dev.brunocesar.onlinedraw.business.usecases.DrawUseCase;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

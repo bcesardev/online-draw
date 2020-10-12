@@ -1,7 +1,7 @@
-package com.brunocesar.onlinedraw.domains;
+package dev.brunocesar.onlinedraw.domains;
 
-import com.brunocesar.onlinedraw.business.exceptions.DrawException;
-import com.brunocesar.onlinedraw.entrypoints.dtos.DrawRequest;
+import dev.brunocesar.onlinedraw.business.exceptions.DrawException;
+import dev.brunocesar.onlinedraw.entrypoints.dtos.DrawRequest;
 
 import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
